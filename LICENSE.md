@@ -1,17 +1,115 @@
-The MIT License (MIT)
-Copyright (c) 2022 - present, Gani Georgiev
+```markdown
+# 🗂️ Task Bucket
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software
-and associated documentation files (the "Software"), to deal in the Software without restriction,
-including without limitation the rights to use, copy, modify, merge, publish, distribute,
-sublicense, and/or sell copies of the Software, and to permit persons to whom the Software
-is furnished to do so, subject to the following conditions:
+A full-stack task management platform built for EDC. Designed for speed, modularity, and secure collaboration.
 
-The above copyright notice and this permission notice shall be included in all copies or
-substantial portions of the Software.
+🔗 [Live Demo](https://task-bucket.vercel.app)
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
-BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+---
+
+## 🧰 Tech Stack
+
+| Layer      | Technology               |
+|------------|--------------------------|
+| Frontend   | React, Vite, Tailwind CSS|
+| Backend    | Node.js, Express         |
+| Validation | Custom logic + Middleware|
+| Deployment | Vercel                   |
+
+---
+
+## 📁 Project Structure
+
+```
+task_bucket/
+├── client/          # React frontend (Vite + Tailwind)
+├── backend/         # Express backend with validation and rate limiting
+├── CHANGELOG.md     # Feature history
+├── LICENSE.md       # MIT License
+├── MULTIPLE_DOMAINS_FEATURE.md # Notes on domain support
+├── package.json     # Root config
+└── .gitignore
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/Subhadip006/task_bucket.git
+cd task_bucket
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+cd client && npm install
+cd ../backend && npm install
+```
+
+### 3. Run locally
+
+#### Frontend
+
+```bash
+cd client
+npm run dev
+```
+
+#### Backend
+
+```bash
+cd backend
+npm run start
+```
+
+---
+
+## 🔐 Key Features
+
+- ✅ **Input Validation**: Prevents malformed or malicious data
+- 🛡️ **Rate Limiting**: Protects against abuse and spam
+- 🔒 **Private/Public Tasks**: Toggle visibility for collaboration
+- 💬 **Discussion Threads**: Commenting system for tasks
+- 🌐 **Multi-Domain Support**: Configurable for multiple tenants
+
+---
+
+## 🧪 Scripts
+
+| Location | Command         | Description                  |
+|----------|------------------|------------------------------|
+| client   | `npm run dev`    | Start Vite dev server        |
+| client   | `npm run build`  | Build frontend for production|
+| backend  | `npm run start`  | Start Express server         |
+
+---
+
+## 🌐 Deployment
+
+This project is configured for **Vercel**. To deploy:
+
+1. Push to GitHub
+2. Connect repo to Vercel
+3. Vercel auto-detects frontend via `client/` and builds using `vite.config.js`
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. See [`LICENSE.md`](./LICENSE.md) for details.
+
+---
+
+## 👥 Contributors
+
+Built and maintained by [Subhadip006](https://github.com/Subhadip006) and collaborators.
+
+---
+
+```
+
+Let me know if you'd like to add API documentation, environment variable setup, or contribution guidelines. I can also help generate a changelog or usage walkthrough if needed.
